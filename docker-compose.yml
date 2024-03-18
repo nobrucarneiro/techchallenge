@@ -1,0 +1,33 @@
+version: '3.5'
+services:
+  postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ~/apps/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=admin
+      - POSTGRES_DB=g37_lanches
+    networks:
+      - g37-lanches-network
+
+  g37-lanches-api:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      - ENVIRONMENT=dev
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=g37_lanches
+      - POSTGRES_SSLMODE=disable
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+    networks:
+      - g37-lanches-network
+
+networks:
+  g37-lanches-network:
+    driver: bridge
