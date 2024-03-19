@@ -83,8 +83,7 @@ Criar API Deployment
 ```
 
 ## Documentação
-[Documentation](https://github.com/IgorRamosBR/g37-techchallenge/tree/master/docs)
-
+[Documentation](https://github.com/nobrucarneiro/techchallenge/tree/main/docs)
 
 ## Arquitetura
 Clean Architecture com a estrutura de pastas baseada no [Standard Go Project Layout](https://github.com/golang-standards/project-layout#go-directories) 
