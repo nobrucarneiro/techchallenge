@@ -96,6 +96,8 @@ Clean Architecture com a estrutura de pastas baseada no [Standard Go Project Lay
 ├── internal
 |   |── api
 |   |── controllers
+|   │   ├── _api
+|   │   ├── application
 |   ├── core
 |   │   ├── entities
 |   │   ├── usecases
