@@ -102,3 +102,7 @@ Clean Architecture com a estrutura de pastas baseada no [Standard Go Project Lay
 ├── k8s
 ├── migrations
 ```
+
+## Arquitetura
+![cloud-architecture](https://github.com/nobrucarneiro/techchallenge/assets/46383235/d8f89139-418b-4442-9e36-f8ee7a6c34aa)
+
