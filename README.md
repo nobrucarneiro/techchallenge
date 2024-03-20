@@ -33,11 +33,6 @@ Subir dependências
 ```bash
   docker-compose up -d
 ```
-
-Rodar aplicação
-```bash
-  docker run -e ENVIRONMENT=dev -e POSTGRES_HOST=localhost -e POSTGRES_PORT=5432 -e POSTGRES_DB=g37_lanches -e POSTGRES_SSLMODE=disable -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -p 8080:8080 --network="host" g37-lanches-api:latest
-```
 <br/>
 
 ## Execução com Kubernetes
