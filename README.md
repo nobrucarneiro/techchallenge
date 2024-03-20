@@ -26,7 +26,7 @@ Serviço de controle de pedidos desenvolvido em Golang.
 Build image
 
 ```bash
-  docker build -t g37-lanches-api:latest .
+  docker build -t lanches-api:latest .
 ```
 
 Subir dependências
